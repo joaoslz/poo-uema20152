@@ -1,18 +1,18 @@
 package aula05.liskov.exemplo2.parte2;
 
-public class MovimentacaoSaldo {
+class MovimentacaoSaldo {
 	
 	 protected double saldo;
 
-	    public MovimentacaoSaldo() {
+	    MovimentacaoSaldo() {
 			this.saldo = 0;
 	    }
 
-	    public void deposita(double valor) {
+	     void deposita(double valor) {
 	        this.saldo += valor;
 	    }
 
-	    public void saca(double valor) {
+	    void saca(double valor) {
 	        if (valor <= this.saldo) {
 	            this.saldo -= valor;
 	        } else {
@@ -20,11 +20,11 @@ public class MovimentacaoSaldo {
 	        }
 	    }
 
-	    public void somaInvestimento(){
+	    void somaInvestimento(){
 	        this.saldo += this.saldo * 0.01;
 	    }
 
-	    public double getSaldo() {
+	    double getSaldo() {
 	        return saldo;
 	    }
 

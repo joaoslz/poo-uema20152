@@ -1,46 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.1.8" icons="true" always-add-relationships="true" generalizations="true" realizations="true" 
   associations="true" dependencies="true" nesting-relationships="true">  
-  <class id="1" language="java" name="aula05.liskov.exemplo2.parte1.ContaUniversitaria" project="minicurso_solid" 
-    file="/minicurso_solid/src/aula05/liskov/parte1/ContaUniversitaria.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="631" y="480"/>    
+  <class id="1" language="java" name="aula05.liskov.exemplo2.parte1.ContaComum" project="poo-uema20152" 
+    file="/poo-uema20152/src/aula05/liskov/exemplo2/parte1/ContaComum.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="196" width="200" x="195" y="36"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="2" language="java" name="aula05.liskov.exemplo2.parte1.ProcessadorDeInvestimentos" project="minicurso_solid" 
-    file="/minicurso_solid/src/aula05/liskov/parte1/ProcessadorDeInvestimentos.java" binary="false" 
+  <class id="2" language="java" name="aula05.liskov.exemplo2.parte1.ContaUniversitaria" project="poo-uema20152" 
+    file="/poo-uema20152/src/aula05/liskov/exemplo2/parte1/ContaUniversitaria.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="176" width="200" x="33" y="305"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="aula05.liskov.exemplo2.parte1.ProcessadorDeInvestimentos" project="poo-uema20152" 
+    file="/poo-uema20152/src/aula05/liskov/exemplo2/parte1/ProcessadorDeInvestimentos.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="480" y="111"/>    
+    <position height="176" width="309" x="657" y="132"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="3" language="java" name="aula05.liskov.exemplo2.parte1.ContaComum" project="minicurso_solid" 
-    file="/minicurso_solid/src/aula05/liskov/parte1/ContaComum.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="263" y="368"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <generalization id="4">    
-    <end type="SOURCE" refId="1"/>    
-    <end type="TARGET" refId="3"/>  
-  </generalization>  
-  <dependency id="5">    
-    <end type="SOURCE" refId="2"/>    
-    <end type="TARGET" refId="3"/>  
+  <dependency id="4">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="2"/>  
   </dependency>  
-  <dependency id="6">    
-    <end type="SOURCE" refId="2"/>    
+  <dependency id="5">    
+    <end type="SOURCE" refId="3"/>    
     <end type="TARGET" refId="1"/>  
   </dependency>  
+  <generalization id="6">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="1"/>  
+  </generalization>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
     <attributes public="true" package="true" protected="true" private="true" static="true"/>    

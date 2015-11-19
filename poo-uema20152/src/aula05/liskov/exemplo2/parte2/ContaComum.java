@@ -1,5 +1,5 @@
 package aula05.liskov.exemplo2.parte2;
-public class ContaComum {
+public class ContaComum implements OperacoesPadroesEmConta {
 
     private MovimentacaoSaldo movimentacaoSaldo;
 

@@ -7,21 +7,21 @@ public class ProcessadorDeInvestimentos {
 
     public static void main(String[] args) {
 
-        for (ContaComum conta : contasDoBanco()) {
-            conta.somaInvestimento();
-
-            System.out.println("Novo Saldo:");
+        for (OperacoesPadroesEmConta conta : contasDoBanco()) {
+        	
+            conta.deposita(100);
+            System.out.println("Novo Saldo:" );
             System.out.println(conta.getSaldo());
         }
     }
 
-    private static List<ContaComum> contasDoBanco() {
+    private static List<OperacoesPadroesEmConta> contasDoBanco() {
         return Arrays.asList(umaContaCom(100), umaContaCom(150),
                 contaUniversitaria(200));
     }
 
-    private static ContaComum contaUniversitaria(double amount) {
-        ContaUniversitaria c = new ContaUniversitaria();
+    private static OperacoesPadroesEmConta contaUniversitaria(double amount) {
+        OperacoesPadroesEmConta c = new ContaUniversitaria();
         c.deposita(amount);
         return c;
     }
